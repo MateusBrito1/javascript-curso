@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>elo</title>
+  </head>
+  <body>
+    <h1>Seu elo é maior ou menor que radiante?</h1>
+    Qual o seu elo? <input type="text" name="elo" id="eloval" />
+
+    <input type="button" value="resultado" onclick="comparar()" />
+
+    <div id="res"></div>
+
+    
+    
+    
+    <script>
+        function comparar() {
+            var eloval = document.querySelector('#eloval')      // ID DO INPUT
+
+            var res = document. querySelector('#res')         // ID DA DIV
+
+            var radiante = 'radiante'                        // VARIAVEL PADRAO
+
+            var elo = eloval.value.toLowerCase()                // O VALOR >ELO< TEM QUE IR PARA O IF. O .VALUE É USADO PARA OBTER VALOR DE UM CAMPO DE TEXTO. toLowerCase é para as palavras não terem diferença quando usar com MAIUSCULA ou minuscula.
+
+            res.innerHTML = `<p>O seu elo é de ${elo}</p>`           // COLOCAR O RES ACIMA DO IF 
+
+            if (elo == radiante){                                      // !! O QUE TEM QUE SER BOTADO AQUI É O STRING/NUMBER !! 
+                res.innerHTML += `<p>Você está no patamar dos nossos jogadores </p>`   //SEMPRE COLOCAR O += 
+
+
+            } else {
+                res.innerHTML += `<p>Você ainda não está qualificado para ser um de nossos jogadores!</p>`
+            }
+
+        }
+
+
+    </script>
+  </body>
+</html>
