@@ -27,19 +27,22 @@
 
             var resu = document.querySelector('#resu')
 
-            var elu = (elo.value)
+            var elu = (elo.value) 
 
             resu.innerHTML = `Seu elo é ${elu}`
 
-            if ( elu === "diamante"  || elu === "imortal" || elu === "radiante") {
+            if (elu === "imortal" || elu === "radiante") {
                 
-            resu.innerHTML += `<p>Você está acima da média</p>`
+            resu.innerHTML += `<p> Seu <strong>Elo</strong> está acima da média </p>`
             
-            } else {    
-            resu.innerHTML += `<p>Você está abaixo da média</p>`
-            }  
-        }
-        
+            } else if (elu === "diamante") {     
+            resu.innerHTML += `<p> Seu <strong>Elo</strong> é mediano </p>`
+
+            }  else  {  
+            resu.innerHTML += `<p> Seu <strong>Elo</strong> está abaixo da média </p>` 
+            }
+            }
+            
         </script>
 
     
