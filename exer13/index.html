@@ -1,51 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    </head>
-    <body>
+  </head>
+  <body>
     <h1>QUAL SEU ELO?</h1>
 
-    <select  name="elo" id="elo" onchange="selecionar()">
-        <option value="ferro">Ferro</option>
-        <option value="bronze">Bronze</option>
-        <option value="prata">Prata</option>
-        <option value="ouro">Ouro</option>
-        <option value="platina">Platina</option>
-        <option value="diamante">Diamante</option>
-        <option value="imortal">Imortal</option>
-        <option value="radiante">Radiante</option>
+    <select name="elo" id="elo" onchange="selecionar()">
+      <option value="ferro">Ferro</option>
+      <option value="bronze">Bronze</option>
+      <option value="prata">Prata</option>
+      <option value="ouro">Ouro</option>
+      <option value="platina">Platina</option>
+      <option value="diamante">Diamante</option>
+      <option value="imortal">Imortal</option>
+      <option value="radiante">Radiante</option>
     </select>
-        <div id="resu"></div>
+    <div id="resu"></div>
 
-        <script>    
-        function selecionar() {
-            var elo = document.querySelector('#elo')
+    <script>
+      function selecionar() {
+        var elo = document.querySelector("#elo");
 
-            var resu = document.querySelector('#resu')
+        var resu = document.querySelector("#resu");
 
-            var elu = (elo.value) 
+        var elu = elo.value;
 
-            resu.innerHTML = `Seu elo é ${elu}`
+        resu.innerHTML = `Seu elo é ${elu}`;
 
-            if (elu === "imortal" || elu === "radiante") {
-                
-            resu.innerHTML += `<p> Seu <strong>Elo</strong> está acima da média </p>`
-            
-            } else if (elu === "diamante") {     
-            resu.innerHTML += `<p> Seu <strong>Elo</strong> é mediano </p>`
-
-            }  else  {  
-            resu.innerHTML += `<p> Seu <strong>Elo</strong> está abaixo da média </p>` 
-            }
-            }
-            
-        </script>
-
-    
-
-    </body>
+        if (elu === "imortal" || elu === "radiante") {
+          resu.innerHTML += `<p> Seu <strong>Elo</strong> está acima da média </p>`;
+        } else if (elu === "diamante") {
+          resu.innerHTML += `<p> Seu <strong>Elo</strong> é mediano </p>`;
+        } else {
+          resu.innerHTML += `<p> Seu <strong>Elo</strong> está abaixo da média </p>`;
+        }
+      }
+    </script>
+  </body>
 </html>
