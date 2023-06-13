@@ -3,6 +3,7 @@ function contar (){
     let fim = document.getElementById('fi')
     let passo = document.getElementById('pass')
     let res = document.getElementById ('res')
+
     if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
             alert('Por favor, insira um número!')
     } else {
