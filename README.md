@@ -1,2 +1,2 @@
-# javascript
- Estudos de Java Script
+# Javascriot
+ Curso de Java Script.
