@@ -40,19 +40,12 @@ function finalizar() {
 
     } else {
         let cad = valores.length
-        let maior = valores[0]
-        let menor = valores[0]
+        let maior = Math.max(...valores)
+        let menor = Math.min(...valores)
         let soma = 0 
-        let media = 0
-        for(let pos in valores){
-            soma += valores[pos]
-        }
-        for(let pos in valores){
-            if(valores[pos] > maior){
-                maior = valores[pos]
-            }  else {
-                menor = valores [pos]
-            }
+        for(let som in valores){
+            soma += valores[som]
+            
         }
         res.innerHTML = ''
         res.innerHTML += `<p>Ao todo, temos ${cad} números cadastrados.</p>`
