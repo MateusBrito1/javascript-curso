@@ -18,7 +18,7 @@ function inLista(n, l){
             return false
         }
 }
-
+//Função do botão adicionar. Verifica se é um numero válido e se está já adicionado na lista.
 function adicionar(){
     if(isNumero(num.value) && !inLista(num.value, valores)){
                 valores.push(Number(num.value))
@@ -29,8 +29,8 @@ function adicionar(){
     } else {
         alert('Valor invalido ou já encontrado na lista.')
     } 
-    num.value = ''
-    num.focus()
+    num.value = ''              //Limpar quando for colocar um novo número.
+    num.focus()                 //Limpar ao apertar na barra de colocar o número.
 }
 
 
