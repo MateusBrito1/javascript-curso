@@ -40,8 +40,8 @@ function finalizar() {
 
     } else {
         let cad = valores.length
-        let maior = Math.max(...valores)     //colocar ... e o nome da array. Math max (pegar o máximo de valores informados)
-        let menor = Math.min(...valores)    //Math.min minimo de valor informados.
+        let maior = Math.max(...valores)     //colocar ... e o nome da array. Math max (pegar o maior numero informado )
+        let menor = Math.min(...valores)    //Math.min pegar o menor valor informados.
         let soma = 0 
         for(let som in valores){
             soma += valores[som]
