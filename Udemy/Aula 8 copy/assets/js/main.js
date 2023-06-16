@@ -1,6 +1,9 @@
 //Caputar o evento de submit do formulario
+let peso = document.getElementById('peso')
+let altura = document.getElementById('altura')
+const form = document.getElementById('form')
 
-const form = document.getElementById('#form')
+
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
