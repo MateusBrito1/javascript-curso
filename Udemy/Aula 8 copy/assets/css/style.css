@@ -57,3 +57,17 @@ button {
 button:hover {
     background-color: rgb(7, 105, 105);
 }
+
+ul, li {
+    list-style: none;
+    columns: 2;
+}
+
+.paragrafo-result {
+    background-color: rgb(91, 180, 118);
+    padding: 8px;
+}
+
+.paragrafo-nivel {
+    padding: 8px;
+}
