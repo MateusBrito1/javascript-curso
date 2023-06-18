@@ -6,6 +6,7 @@ form.addEventListener('submit', function (event) {
     addValores()
     setandoResposta();
     setandoNivel();
+    form.reset();
 });
 
 
@@ -31,10 +32,9 @@ function setandoResposta (){
     const resultado = document.querySelector ('#resultado')
     const paragrafo = document.createElement("p")
     paragrafo.classList.add('paragrafo-principal')
-
+    resultado.innerHTML = ''
     const imc = getIMC ();
     const nivel = nivelIMC(imc);
-
     resultado.appendChild(paragrafo);
     paragrafo.innerHTML = `O seu IMC é ${imc}`
 }
@@ -47,10 +47,8 @@ function setandoNivel (){
     const imc = getIMC();
     const nivel = nivelIMC(imc);
 
-    parag.innerHTML = `O seu nivel é ${nivel}`
+    parag.innerHTML += `O seu nivel é ${nivel}`
     resultado.appendChild(parag);
-    
-    
 }
 
 //Condições do IMC
