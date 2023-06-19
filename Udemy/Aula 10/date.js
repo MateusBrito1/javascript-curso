@@ -1,5 +1,5 @@
 
-let sem;
+/*let sem;
 
 switch (new Date().getDay()){
     case 0:
@@ -33,9 +33,9 @@ if (new Date().getDay() === 0){
 }
 
 console.log(sem)
+*/
 
-
-const diaDaSemana = [
+/*const diaDaSemana = [
     "Domingo",
     "Segunda",
     "Terça",
@@ -47,4 +47,14 @@ const diaDaSemana = [
    
   const data = new Date();
    
-  console.log(`Hoje é ${diaDaSemana[data.getDay()]}`);
+  console.log(`Hoje é ${diaDaSemana[data.getDay()]}`);*/
+
+  const date = new Date();
+
+const dia = date.getDate(); // Obtém o dia do mês (1 a 31)
+const mes = date.toLocaleString('pt-BR', { month: 'long' }); // Obtém o nome do mês
+const ano = date.getFullYear(); // Obtém o ano com 4 dígitos
+
+const dataString = `${dia} de ${mes} de ${ano}`;
+
+console.log(`Data atual: ${dataString}`);
