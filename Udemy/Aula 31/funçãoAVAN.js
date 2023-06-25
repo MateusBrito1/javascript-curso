@@ -15,11 +15,11 @@ souUmDado();
 
 //Ex:
 
-/*function executaFuncao (funcao){
+function executaFuncao (funcao){
     funcao();
 }
 
-executaFuncao(souUmDado)*/
+executaFuncao(souUmDado)
 
 
 //Arrow function 
@@ -29,3 +29,13 @@ const funcaoArrow = () => {
 }
 
 funcaoArrow();
+
+// Dentro de um OBJ 
+
+const obj = {
+    falar (){
+        console.log('Estou falando...')
+    }
+}
+
+obj.falar();
