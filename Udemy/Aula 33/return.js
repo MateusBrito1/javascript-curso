@@ -23,10 +23,10 @@ function criaPessoa (usuario, senha){
 
 const p1 = criaPessoa('Luizinho', 'Strowt@') // Objeto com functions. Melhor forma.
 
-//Objeto sem as functions, funciona do mesmo jeito.
-const p2 = {    
+
+const p2 = {    //Objeto sem as functions, funciona do mesmo jeito.
     usuario: 'Joaozinho',
-    senha: 'Strowt68'
+    senha: 'Strowt11'
 };
 
 console.log(p1)

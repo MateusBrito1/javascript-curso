@@ -1,18 +1,20 @@
-/*const nome = 'Luiz';
+const name = 'Luiz';
 
 function falaNome (){
-    const nome = 'Otavio' //Irá dar certo porque está atribuido nesse escopo. e o 'Luiz' deixará de ser luiz e virará 'otavio'.
+    const name = 'Otavio' //Irá dar certo porque está atribuido nesse escopo. e o 'Luiz' deixará de ser luiz e virará 'otavio'.
     console.log(nome);
 }
 
 function usaFalaNome(){
-    const nome = 'Otavio'  //Colocando o nome aqui não irá funcionar, porque ele só vai pegar os vizinhos dele (falanome). logo, será o de cima, que está com 'luiz'
+    const name = 'Otavio'  //Colocando o nome aqui não irá funcionar, porque ele só vai pegar os vizinhos dele (falanome). logo, será o de cima, que está com 'luiz'
     falaNome();     //Chamando a função falanome que será o 'const nome'
 }
 
-usaFalaNome();*/
+usaFalaNome(); 
 
-/*const nome = "Mateus"
+
+// --------------------- //
+const nome = "Mateus"
 
 function falaNome (nSobrenome) {
     let nome = "João"
@@ -23,8 +25,9 @@ function falaNomeSobrenome(sobrenome) {
     return falaNome (sobrenome);
 }
 
-falaNomeSobrenome("Brito")*/
+falaNomeSobrenome("Brito")
 
+// ------------------ //
 
 function myName (newName){
     const name = newName || 'Mateus'
