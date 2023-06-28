@@ -1,4 +1,4 @@
-/*function outerFunction() {
+function outerFunction() {
     const outerVariable = 'Hello'
 
     function innerFunction () {
@@ -9,7 +9,10 @@
 }
 
 const closureFunction = outerFunction();
-closureFunction();*/
+closureFunction();
+
+// - - - - -- - - -  - - - - - - -  - - - -
+
 
 
 function retornaFuncao (nome) {
