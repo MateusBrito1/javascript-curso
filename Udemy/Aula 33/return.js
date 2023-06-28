@@ -18,7 +18,7 @@ soma2(10, 10)
 //--------------------------//
 
 function criaPessoa (usuario, senha){
-    return { usuario, senha};
+    return { usuario, senha };
 }
 
 const p1 = criaPessoa('Luizinho', 'Strowt@') // Objeto com functions. Melhor forma.
