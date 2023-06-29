@@ -31,37 +31,27 @@ function Calculadora() {
       return;
     }
   };
-  this.clearDisplay = () => {
-    this.display.value = "";
-  };
+  this.clearDisplay = () => (this.display.value = "");
 
-  this.apagaUm = () => {
-    this.display.value = this.display.value.slice(0, -1);
-  };
+  this.apagaUm = () => (this.display.value = this.display.value.slice(0, -1));
 
   this.cliqueBotoes = () => {
     document.addEventListener("click", (event) => {
       const el = event.target;
 
-      if (el.classList.contains("btn-num")) {
-        this.btnParaDisplay(el.innerText);
-      }
-      if (el.classList.contains("btn-clear")) {
-        this.clearDisplay();
-      }
-      if (el.classList.contains("btn-del")) {
-        this.apagaUm();
-      }
-      if (el.classList.contains("btn-eq")) {
-        this.realizaConta();
-      }
+      if (el.classList.contains("btn-num")) this.btnParaDisplay(el.innerText);
+
+      if (el.classList.contains("btn-clear")) this.clearDisplay();
+
+      if (el.classList.contains("btn-del")) this.apagaUm();
+
+      if (el.classList.contains("btn-eq")) this.realizaConta();
+
       this.display.focus();
     });
   };
-  this.btnParaDisplay = (valor) => {
-    this.display.value += valor;
-  };
+  this.btnParaDisplay = (valor) => (this.display.value += valor);
 }
 
-const calculadora = new Calculadora();
-calculadora.inicia();
+const calc = new Calculadora();
+calc.inicia();
