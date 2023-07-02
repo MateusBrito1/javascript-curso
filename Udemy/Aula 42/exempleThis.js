@@ -1,4 +1,4 @@
-const agents = {
+/*const agents = {
     name: 'raze',
     role: 'duelist',
     kda: 5.20,
@@ -13,4 +13,6 @@ const agents = {
     }
 }
 
-agents.printBio()
+*/
+
+
