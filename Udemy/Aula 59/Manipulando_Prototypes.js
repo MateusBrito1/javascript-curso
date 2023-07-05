@@ -41,5 +41,27 @@ const pessoa2 = {
 
 Object.setPrototypeOf(pessoa2, Pessoa.prototype);
 
-console.log(pessoa2);
-console.log(pessoa1);
+const p3 = Object.create(Pessoa.prototype , {
+  nome: {
+    value: 'Matt',
+    writable: true,
+    enumerable: true,
+    configurable: true,
+  },
+  idade: {
+    value: '22',
+    writable: true,
+    enumerable: true,
+    configurable: true,
+  },
+  jogo: {
+    value: 'Valorant',
+    writable: true,
+    enumerable: true,
+    configurable: true,
+  }
+})
+
+
+console.log(`Meu nome é: ${p3.nome}, tenho ${p3.idade} anos, e meu jogo preferido é ${p3.jogo}`)
+
