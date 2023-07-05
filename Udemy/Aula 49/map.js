@@ -34,7 +34,6 @@ const ids = pessoas.map((pessoa, i) => ({ ...pessoa, id: i + 1 }));
 
 console.log(ids);
 
-
 /*const myPersons = (person) => {
     return {
         ...person,

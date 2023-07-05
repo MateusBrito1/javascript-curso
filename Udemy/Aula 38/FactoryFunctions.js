@@ -33,10 +33,9 @@ function criarPessoa(nome, sobrenome, p, a) {
   };
 }
 
-const p1 = criarPessoa("Mariana", "Petrovich", 80, 1.60);
+const p1 = criarPessoa("Mariana", "Petrovich", 80, 1.6);
 p1.nomeCompleto = "Mateus Gabriel de Melo brito";
 console.log(p1.nome);
 console.log(p1.sobrenome);
 console.log(p1.fala("Bem-vindo"));
-console.log(('Seu imc é de:'), p1.imc); 
-
+console.log("Seu imc é de:", p1.imc);
