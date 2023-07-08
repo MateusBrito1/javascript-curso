@@ -40,7 +40,7 @@ function increase() {
   };
 
   Mug.prototype.increase = function (percentage) {
-    this.price = this.price + this.price * (percentage / 100);
+    this.price = this.price + this.price * (percentage / 100);''
   };
 }
 
