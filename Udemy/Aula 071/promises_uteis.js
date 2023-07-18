@@ -36,7 +36,7 @@ Promise.race(promises)
 // - - - - - - - - - - - - - -
 
 // Promise all
-const promises = [
+const PPromises = [
   "Primeiro valor",
   wait("Promise um", 3000),
   wait("Promise dois", 500),
