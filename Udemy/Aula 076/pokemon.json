@@ -1,0 +1,164 @@
+{
+  "pokedex": [
+    {
+      "id": 1,
+      "name": "Bulbasaur",
+      "type": "Grass",
+      "health": "Health: 45",
+      "attack": "Attack: 49",
+      "defense": "Defense: 49"
+    },
+    {
+      "id": 2,
+      "name": "Charmander",
+      "type": "Fire",
+      "health": "Health: 39",
+      "attack": "Attack: 52",
+      "defense": "Defense: 43"
+    },
+    {
+      "id": 3,
+      "name": "Squirtle",
+      "type": "Water",
+      "health": "Health: 44",
+      "attack": "Attack: 48",
+      "defense": "Defense: 65"
+    },
+    {
+      "id": 4,
+      "name": "Pikachu",
+      "type": "Electric",
+      "health": "Health: 35",
+      "attack": "Attack: 55",
+      "defense": "Defense: 40"
+    },
+    {
+      "id": 5,
+      "name": "Jigglypuff",
+      "type": "Fairy",
+      "health": "Health: 115",
+      "attack": "Attack: 45",
+      "defense": "Defense: 20"
+    },
+    {
+      "id": 6,
+      "name": "Mewtwo",
+      "type": "Psychic",
+      "health": "Health: 106",
+      "attack": "Attack: 110",
+      "defense": "Defense: 90"
+    },
+    {
+      "id": 7,
+      "name": "Dragonite",
+      "type": "Dragon",
+      "health": "Health: 91",
+      "attack": "Attack: 134",
+      "defense": "Defense: 95"
+    },
+    {
+      "id": 8,
+      "name": "Gengar",
+      "type": "Ghost",
+      "health": "Health: 60",
+      "attack": "Attack: 65",
+      "defense": "Defense: 60"
+    },
+    {
+      "id": 9,
+      "name": "Alakazam",
+      "type": "Psychic",
+      "health": "Health: 55",
+      "attack": "Attack: 50",
+      "defense": "Defense: 45"
+    },
+    {
+      "id": 10,
+      "name": "Gyarados",
+      "type": "Water",
+      "health": "Health: 95",
+      "attack": "Attack: 125",
+      "defense": "Defense: 79"
+    },
+    {
+      "id": 11,
+      "name": "Machamp",
+      "type": "Fighting",
+      "health": "Health: 90",
+      "attack": "Attack: 130",
+      "defense": "Defense: 80"
+    },
+    {
+      "id": 12,
+      "name": "Lapras",
+      "type": "Water",
+      "health": "Health: 130",
+      "attack": "Attack: 85",
+      "defense": "Defense: 80"
+    },
+    {
+      "id": 13,
+      "name": "Arcanine",
+      "type": "Fire",
+      "health": "Health: 90",
+      "attack": "Attack: 110",
+      "defense": "Defense: 80"
+    },
+    {
+      "id": 14,
+      "name": "Eevee",
+      "type": "Normal",
+      "health": "Health: 55",
+      "attack": "Attack: 55",
+      "defense": "Defense: 50"
+    },
+    {
+      "id": 15,
+      "name": "Vaporeon",
+      "type": "Water",
+      "health": "Health: 130",
+      "attack": "Attack: 65",
+      "defense": "Defense: 60"
+    },
+    {
+      "id": 16,
+      "name": "Jolteon",
+      "type": "Electric",
+      "health": "Health: 65",
+      "attack": "Attack: 65",
+      "defense": "Defense: 60"
+    },
+    {
+      "id": 17,
+      "name": "Flareon",
+      "type": "Fire",
+      "health": "Health: 65",
+      "attack": "Attack: 130",
+      "defense": "Defense: 60"
+    },
+    {
+      "id": 18,
+      "name": "Aerodactyl",
+      "type": "Rock",
+      "health": "Health: 80",
+      "attack": "Attack: 105",
+      "defense": "Defense: 65"
+    },
+    {
+      "id": 19,
+      "name": "Articuno",
+      "type": "Ice",
+      "health": "Health: 90",
+      "attack": "Attack: 85",
+      "defense": "Defense: 100"
+    },
+    {
+      "id": 20,
+      "name": "Zapdos",
+      "type": "Electric",
+      "health": "Health: 90",
+      "attack": "Attack: 90",
+      "defense": "Defense: 85"
+    }
+  ]
+}
