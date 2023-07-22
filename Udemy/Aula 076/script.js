@@ -1,7 +1,6 @@
 const resultado = document.querySelector(".resultado");
 
-axios("pokemon.json").then((resposta) => carregaElementos(resposta.data))
-
+axios("pokemon.json").then((resposta) => carregaElementos(resposta.data));
 
 function carregaElementos(json) {
   const table = document.createElement("table");
@@ -14,16 +13,24 @@ function carregaElementos(json) {
 
   for (let pokemon of json.pokedex) {
     const tr = document.createElement("tr");
+    const img = document.createElement("img");
+    img.src = pokemon.img;
+    img.height = 95;
 
     for (let key in pokemon) {
       const td = document.createElement("td");
-      td.innerHTML = pokemon[key];
+
+      if (key === "img") {
+        td.appendChild(img);
+      } else {
+        td.innerHTML = pokemon[key];
+      }
 
       if (colors[key]) {
         td.style.color = colors[key];
       }
 
-      tr.appendChild(td);
+      tr.appendChild(td)
     }
 
     table.appendChild(tr);
